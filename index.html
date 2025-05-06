@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Animations Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Animations Showcase</h1>
+    <p>Explore and Copy Animation Code Snippets for Your Projects!</p>
+  </header>
+
+  <main>
+    <section class="animations">
+      <div class="animation-item" id="fade-in">
+        <h3>Fade In</h3>
+        <div class="preview" id="fadePreview">Preview</div>
+        <textarea readonly class="code-snippet">.fade-in { animation: fadeIn 2s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; }}</textarea>
+      </div>
+
+      <div class="animation-item" id="bounce">
+        <h3>Bounce</h3>
+        <div class="preview" id="bouncePreview">Preview</div>
+        <textarea readonly class="code-snippet">.bounce { animation: bounce 1s ease-in-out infinite; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); }}</textarea>
+      </div>
+
+      <div class="animation-item" id="spin">
+        <h3>Spin</h3>
+        <div class="preview" id="spinPreview">Preview</div>
+        <textarea readonly class="code-snippet">.spin { animation: spin 3s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); }}</textarea>
+      </div>
+
+      <div class="animation-item" id="scale-up">
+        <h3>Scale Up</h3>
+        <div class="preview" id="scaleUpPreview">Preview</div>
+        <textarea readonly class="code-snippet">.scale-up { animation: scaleUp 1s ease-in-out; }
+@keyframes scaleUp { from { transform: scale(0.5); } to { transform: scale(1); }}</textarea>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <a href="https://yourportfolio.com" target="_blank">Your Name</a> &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
